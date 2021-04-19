@@ -1,0 +1,18 @@
+{
+  "name": "express-sqlite3",
+  "version": "1.0.0",
+  "description": "Belajar Express SQLite3",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server.js --watch",
+    "migration:user": "node ./Models/Schema/UserSchema.js"
+  },
+  "author": "irwanrobi",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "knex": "^0.95.4",
+    "sqlite3": "^5.0.2"
+  }
+}
