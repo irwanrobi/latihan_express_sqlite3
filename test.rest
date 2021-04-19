@@ -4,11 +4,28 @@ Content-Type: application/json
 Accept: application/json
 
 {
-    "email" : "alif@gmail.com",
-    "password" : "1qazxsw2"
+    "email" : "irwan@gmail.com",
+    "password" : "123456"
 }
 
 ###
 GET http://localhost:8000/api/users
 Content-Type: application/json
 Accept: application/json
+
+###
+DELETE http://localhost:8000/api/users
+Content-Type: application/json
+Accept: application/json
+
+{
+    "id" : 1
+}
+
+###
+PATCH http://localhost:8000/api/users/edit/2
+Content-Type: application/json
+
+{
+    "email" : "test@gmail.com"
+}
